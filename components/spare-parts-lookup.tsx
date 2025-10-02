@@ -96,9 +96,9 @@ export default function SparePartsLookup() {
     };
 
     return (
-        <div className="space-y-6">
+        <div className="flex flex-col gap-6 w-full md:flex-row">
             {/* Model Number Input Section */}
-            <Card className="p-6 bg-card border-border">
+            <Card className="p-4 md:p-6 bg-card border-border h-fit">
                 <div className="space-y-4">
                     <div>
                         <label
@@ -149,7 +149,7 @@ export default function SparePartsLookup() {
 
             {/* Search and Results Section */}
             {spareParts.length > 0 && (
-                <Card className="p-6 bg-card border-border">
+                <Card className="p-4 md:p-6 bg-card border-border flex-1">
                     <div className="space-y-4">
                         <div>
                             <label
